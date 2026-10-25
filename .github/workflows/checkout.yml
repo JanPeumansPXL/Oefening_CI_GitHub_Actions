@@ -1,0 +1,19 @@
+name: Checkout Example
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+      - name: verify listing and contents directories
+        run: |
+          echo "=== listing and contents directories==="
+          ls -a -l -h -R
+          
