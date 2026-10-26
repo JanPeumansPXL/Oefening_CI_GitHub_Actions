@@ -28,5 +28,5 @@ jobs:
       - name: zip app files and node_modules
         run: zip -r archief.zip ./
       - name: Better Test Reports Action
-        uses: mridang/action-test-reporter@v3.0.0
+        uses: mridang/action-test-reporter@v1.5.0
         
